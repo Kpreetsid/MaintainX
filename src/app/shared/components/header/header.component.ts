@@ -7,6 +7,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  pic1:string="assets/logo.jpeg";
+
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
@@ -21,5 +23,6 @@ export class HeaderComponent implements OnInit {
       );
     }, 300);
   }
+
 
 }

@@ -1,10 +1,11 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="back">
     <mat-toolbar-row>
         <button mat-icon-button (click)="toggleSideBar()">
             <mat-icon>menu</mat-icon>
         </button>
-
-        <span> APP LOGO </span>
+        <div class="logo">
+            <img [src]="pic1" height="10%" width="10%"> 
+        </div>
 
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
